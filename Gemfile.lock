@@ -151,6 +151,9 @@ GEM
       will_paginate (~> 3.0.2)
     refinerycms-dashboard (2.0.10)
       refinerycms-core (= 2.0.10)
+    refinerycms-i18n (2.0.2)
+      refinerycms-core (~> 2.0.0)
+      routing-filter (>= 0.2.3)
     refinerycms-images (2.0.10)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
@@ -173,6 +176,8 @@ GEM
     refinerycms-settings (2.0.3)
       acts_as_indexed (~> 0.7.7)
       refinerycms-core (~> 2.0.10)
+    routing-filter (0.3.1)
+      actionpack
     ruby2ruby (2.0.6)
       ruby_parser (~> 3.1)
       sexp_processor (~> 4.0)
@@ -228,8 +233,9 @@ DEPENDENCIES
   pg
   rails (~> 3.2.16)
   refinerycms (~> 2.0.0)
-  refinerycms-inquiries
-  refinerycms-page-images
+  refinerycms-i18n (~> 2.0.0)
+  refinerycms-inquiries (~> 2.0.0)
+  refinerycms-page-images (~> 2.0.0)
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
