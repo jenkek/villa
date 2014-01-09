@@ -22,6 +22,10 @@ group :default do
   gem 'globalize3', '0.3.0'
 end
 
+group :development do
+  gem 'brakeman'
+end
+
 group :production do
   gem 'unicorn'
 end

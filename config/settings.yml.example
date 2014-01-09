@@ -1,0 +1,6 @@
+app:
+  secret:     SECRET
+
+errors:
+  key:        SECRET
+  host:       errors.host
