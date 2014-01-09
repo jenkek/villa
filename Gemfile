@@ -16,6 +16,10 @@ group :default do
   # Refinery CMS
   gem 'refinerycms', '~> 2.0.0'
   gem 'refinerycms-page-images'
+  # gem 'refinerycms-inquiries', '~> 2.0.0'
+
+  # Refinery CMS dependencies
+  gem 'globalize3', '0.3.0'
 end
 
 group :production do

@@ -60,7 +60,7 @@ GEM
     execjs (2.0.2)
     friendly_id (4.0.10.1)
       activerecord (>= 3.0, < 4.0)
-    globalize3 (0.3.1)
+    globalize3 (0.3.0)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
       paper_trail (~> 2)
@@ -189,6 +189,7 @@ DEPENDENCIES
   airbrake
   coffee-rails (~> 3.2.1)
   configliere
+  globalize3 (= 0.3.0)
   jquery-rails
   pg
   rails (~> 3.2.16)
