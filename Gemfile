@@ -26,6 +26,8 @@ end
 
 group :development do
   gem 'brakeman'
+  gem 'capistrano-unicorn', '~> 0.1.10', :require => false
+  gem 'openteam-capistrano', :require => false
 end
 
 group :production do
