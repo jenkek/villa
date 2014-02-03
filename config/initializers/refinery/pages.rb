@@ -12,7 +12,7 @@ Refinery::Pages.configure do |config|
   # config.new_page_parts = false
 
   # Configure whether to enable marketable_urls
-  # config.marketable_urls = true
+  config.marketable_urls = true
 
   # Configure how many pages per page should be displayed when a dialog is presented that contains a links to pages
   # config.pages_per_dialog = 14

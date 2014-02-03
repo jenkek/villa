@@ -1,0 +1,13 @@
+<section class='no_body_content_left no_body_content_right' id='body_content'>
+  <section id='body'>
+    <div class='inner'>
+      <%= raw @page.content_for(:body) %>
+    </div>
+  </section>
+
+  <section id='side_body'>
+    <div class='inner'>
+      <%= raw @page.content_for(:side_body) %>
+    </div>
+  </section>
+</section>

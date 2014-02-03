@@ -3,19 +3,16 @@
 <% site_bar = render('/refinery/site_bar', :head => true) %>
 <%= render '/refinery/head' %>
 <%= render '/refinery/javascripts' %>
-<body>
+<body class='<%= %w(sea mountain)[rand(2)] %>'>
   <%= site_bar %>
   <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ %>
   <div id='page_container'>
     <header id='header'>
       <%= render '/refinery/header' %>
     </header>
-    <section id='page'>
+    <section id='content'>
       <%= yield %>
     </section>
-    <footer>
-      <%= render '/refinery/footer' %>
-    </footer>
   </div>
 </body>
 </html>
