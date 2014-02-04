@@ -5,6 +5,7 @@ group :assets do
   gem 'compass-rails'
   gem 'jquery-rails'
   gem 'sass-rails',   '~> 3.2.3'
+  gem 'turbo-sprockets-rails3'
   gem 'uglifier', '>= 1.0.3'
 end
 
