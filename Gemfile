@@ -31,7 +31,7 @@ group :development do
 end
 
 group :production do
-  gem 'unicorn', '~> 4.7.0'
+  gem 'unicorn'
 end
 
 group :test do
