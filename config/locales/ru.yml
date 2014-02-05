@@ -1,6 +1,28 @@
 ru:
   menu:
-    home: Главная
-    portfolio: Портфолио
-    leisure: Досуг
-    contact: Заказать
+    home: 'Главная'
+    portfolio: 'Портфолио'
+    leisure: 'Досуг'
+    contact: 'Заказать'
+  refinery:
+    inquiries:
+      inquiries:
+        new:
+          send: 'Отправить'
+
+  activerecord:
+    models:
+      refinery/inquiries/inquiry: 'Сообщение на сайте'
+
+    attributes:
+      refinery/inquiries/inquiry:
+        name: 'Ваше имя'
+        email: 'Адрес электронной почты'
+        phone: 'Телефон'
+        message: 'Текст сообщения'
+
+        placeholder:
+          name: 'Укажите Ваше имя'
+          email: 'Адрес электронной почты для связи с Вами'
+          phone: 'Контактный номер Вашего телефона'
+          message: 'Что бы Вы хотели узнать?'

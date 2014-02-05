@@ -8,19 +8,23 @@
                  } %>
       <div class="field">
         <%= f.required_label :name, :class => 'placeholder-fallback' %>
-        <%= f.text_field :name, :class => 'text', :required => 'required', :placeholder => t('name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+        <%= f.text_field :name, :class => 'text', :required => 'required', :placeholder => t('placeholder.name', :scope => 'activerecord.attributes.refinery/inquiries/inquiry'), :autofocus => true %>
       </div>
       <div class="field">
         <%= f.required_label :email, :class => 'placeholder-fallback' %>
-        <%= f.email_field :email, :class => 'text email', :required => 'required', :placeholder => t('email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+        <%= f.email_field :email, :class => 'text email', :required => 'required', :placeholder => t('placeholder.email', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
       </div>
       <div class="field">
         <%= f.label :phone, :class => 'placeholder-fallback' %>
-        <%= f.text_field :phone, :class => 'text phone', :placeholder => t('phone', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+        <%= f.text_field :phone, :class => 'text phone', :placeholder => t('placeholder.phone', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
       </div>
       <div class='field message_field'>
         <%= f.required_label :message, :class => 'placeholder-fallback' %>
-        <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+        <%= f.text_area :message, :rows => 8, :required => 'required', :placeholder => t('placeholder.message', :scope => 'activerecord.attributes.refinery/inquiries/inquiry') %>
+      </div>
+      <div class="notice">
+        <p>Поля, обозначенные знаком *, обязательны к заполнению.</p>
+        <p>Администрация сайта гарантирует нераспространение предоставленной информации третьим лицам.</p>
       </div>
       <div class="actions">
         <%= f.submit t('.send') %>

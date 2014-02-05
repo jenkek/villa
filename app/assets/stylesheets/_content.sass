@@ -9,9 +9,67 @@
 #body_content
   margin: 20px
 
+  h1, h2, h3, h4, h5
+    font-size: 14px
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 10px
+
   #body
     float: left
-    width: 652px
+    width: 647px
+
+    h1, h2, h3, h4, h5
+      color: #bb6802
+
+    .inquiries
+      .field
+        margin-bottom: 10px
+
+        label
+          font-size: 14px
+          display: block
+
+        input, textarea
+          font-size: 12px
+          font-family: 'Verdana', 'Tahoma', sans-serif
+          border: 1px solid #aeaeae
+          +border-radius(3px)
+          padding: 5px
+          margin: 0
+
+          &:focus
+            border-color: #bb6802
+            background-color: #fef4e5
+
+        input
+          width: 350px
+
+        textarea
+          width: 635px
+          resize: vertical
+
+      .notice
+        font-size: 11px
+        margin-bottom: 15px
+
+      .actions input
+        cursor: pointer
+        font-size: 12px
+        font-family: 'Verdana', 'Tahoma', sans-serif
+        border: 1px solid #cf9450
+        +border-radius(5px)
+        background-color: #ffce82
+        +background(linear-gradient(top, #fed595, #fec76d))
+        padding: 6px 30px 7px
+        margin: 0
+
+        &:hover
+          +text-shadow(1px 1px 1px #cf9450)
+
+        &:active
+          +background(linear-gradient(top, #fec76d, #fed595))
+          padding: 7px 30px 6px
 
   #side_body
     float: right
@@ -19,10 +77,6 @@
 
     h1, h2, h3, h4, h5
       color: #1a64a6
-      font-size: 14px
-      font-weight: bold
-      text-transform: uppercase
-      margin-bottom: 10px
 
     .inner
       border: 2px solid #c0e9ff
