@@ -1,0 +1,486 @@
+.gsInformer
+  div, span, p, a, em, img, table, tbody, tr, th, td
+    margin: 0
+    padding: 0
+    border: 0
+    outline: 0
+    font-weight: inherit
+    font-style: inherit
+    font-family: inherit
+  *:focus
+    outline: 0
+  table, tbody.gsInformer thead, tr, th, td
+    vertical-align: top
+  table
+    width: 100%
+    border-collapse: collapse
+    border-spacing: 0
+    border: 0
+    padding: 0
+    table-layout: auto !important
+  th, td
+    text-align: left
+    font-weight: normal
+    empty-cells: show
+    color: inherit
+    background-color: inherit
+  img
+    display: inline !important
+    box-shadow: initial
+  position: relative
+  font-family: Arial
+  font-size: 11px
+  font-weight: normal
+  zoom: 1
+  min-height: 1%
+  cursor: pointer
+  line-height: 13px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  .nolink, a
+    background: 0
+    text-decoration: none
+    color: inherit
+  &.informerPadding
+    padding: 1px
+  table td
+    font-size: 11px
+  em
+    font-style: normal
+  &.loading
+    background: url(http://www.gismeteo.ru/static/images/informer2/ajax-loader.gif) no-repeat center center
+  .cleaner
+    clear: both
+    height: 1px
+    font-size: 1px
+    border: 0
+    margin: 0
+    padding: 0
+    background: transparent
+  #cityLink
+    text-align: center
+    background: #fff
+    font-size: 13px
+    font-weight: bold
+    a
+      font-family: Arial !important
+      color: black !important
+      text-decoration: none
+  .display
+    display: inline-block
+    *display: inline
+    zoom: 1
+    margin-top: 0
+    vertical-align: top
+  .iehack
+    margin-top: 0
+  #error
+    text-align: center
+    vertical-align: middle
+    padding-top: 5px
+  #gsCityHead
+    font-weight: bold
+    font-size: 13px
+    padding: 5px 0 5px 0
+    text-align: center
+    white-space: nowrap
+    &.padding
+      padding: 6px 0 10px 0
+  #tdIcon
+    white-space: nowrap
+  .head
+    position: relative
+    z-index: 7
+  .gsCityF
+    font-weight: bold
+    font-size: 13px
+    padding: 5px 0 5px 0
+    text-align: center
+    white-space: nowrap
+  .main_wrap
+    width: 100%
+    text-align: left
+    height: 35px
+    padding-top: 0
+    padding-bottom: 0
+  .secondaryWrap
+    width: 100%
+    height: 35px
+    background: #fff
+    position: relative
+    table
+      height: 34px
+      td
+        height: 35px
+        vertical-align: top
+  .gsCity
+    font-weight: bold
+    text-align: left
+    padding: 8px 0 0 0
+    font-size: 13px
+    zoom: 1
+    height: 27px
+    margin-top: 0
+    white-space: nowrap
+    span
+      padding-left: 12px
+      display: block
+  .gsWeatherIcon
+    margin-top: -9px
+    z-index: 8
+    position: relative
+    img
+      vertical-align: middle
+    &.margin
+      margin-top: -22px
+      margin-right: 0
+      width: 74px
+  .gsTemp
+    font-weight: bold
+    padding: 8px 0 0 0
+    font-size: 13px
+    height: 27px
+    zoom: 1
+    position: relative
+  .gsTemp2
+    font-weight: bold
+    padding: 0
+    font-size: 13px
+    height: 27px
+    zoom: 1
+    position: relative
+  .gsTemp .paddingRight
+    padding-right: 12px
+    padding-left: 0 !important
+  .gsTemp2 span
+    padding-right: 0
+  .tsp
+    padding: 0 !important
+    margin: 0 !important
+    *display: inline !important
+    *display: inline-block !important
+    display: inline !important
+    display: inline-block !important
+    display: -moz-inline-box !important
+    width: 0.2em !important
+    height: 0.2em !important
+    overflow: hidden !important
+    text-decoration: inherit
+  .gsTemp em
+    font-weight: bold
+    display: inline
+  .gsAddInfo
+    text-align: center
+    font-size: 11px
+    text-align: center
+    padding-top: 0
+  .gsAddInfo2
+    text-align: center
+    &.padding
+      text-align: center
+      padding: 10px 0 5px 0
+    &.padding2
+      padding-top: 10px
+    &.padding3
+      padding: 0
+  .gsAddInfo3
+    padding: 3px 0 3px 0
+  .gsAddInfo2
+    &.padding3 .gsAddInfo3, &.empty .gsAddInfo3
+      padding: 0
+  .gsLinks .img-untop
+    margin-top: 0
+  #windAddInfo, #pressAddInfo, #humidityAddInfo
+    white-space: nowrap
+    margin: 0 2px
+  .centralized
+    width: 100%
+    position: relative
+    overflow: hidden
+    text-align: center
+    div
+      zoom: 1
+      text-align: center
+      padding-top: 1px
+      padding-bottom: 2px
+  .colsWrapper_1
+    position: relative
+  .colsWrapper_2
+    position: relative
+    padding: 0
+    overflow: hidden
+    zoom: 1
+  .cols
+    position: relative
+    width: 100%
+  .cols_1
+    width: 100%
+    margin: 0
+    &.padding
+      padding: 5px 0 0 0
+    .col
+      width: 25%
+      padding-left: 1px
+      padding-right: 1px
+    #colsDays
+      padding-bottom: 1px
+  .cols .col_h
+    &.today, &.tomorrow
+      text-align: center
+      padding-top: 4px
+      padding-bottom: 0
+  .col
+    height: auto
+    float: none
+  .col_h
+    height: 13px
+    float: left
+    span
+      display: inline-block
+      *display: inline
+      zoom: 1
+      white-space: nowrap
+      padding-left: 2px
+      padding-right: 2px
+  #colsData td
+    white-space: nowrap
+    text-align: center
+  .col
+    .time
+      font-weight: bold
+      text-align: center
+    .temperature, .deg
+      font-weight: bold
+      text-align: center
+      padding: 3px 0 3px 0
+      display: inline-block
+      *display: inline
+      zoom: 1
+    .pressure, .wet, .wind
+      text-align: center
+      display: block
+  .s_icon
+    width: 34px
+    height: 34px
+    position: relative
+    margin: auto
+    display: block
+    padding: 0 !important
+    &.sunny
+      background-position: 0 0
+  .gsLinks
+    cursor: default
+    font-size: 11px !important
+    font-family: Arial !important
+    color: black !important
+    height: auto
+    padding-top: 3px
+    padding-bottom: 2px
+    text-align: left
+    display: block
+    height: 16px
+    overflow: hidden
+    position: relative
+    &.padding
+      padding-top: 10px
+    table td
+      font-family: Arial !important
+      vertical-align: top
+    .leftCol
+      margin-left: 5px
+      float: left
+      a
+        text-decoration: none
+        &:hover
+          text-decoration: none
+      span
+        display: inline-block
+        *display: inline
+        zoom: 1
+        margin-top: 2px
+        padding-left: 2px
+        color: black !important
+      b
+        font-weight: normal !important
+        color: black !important
+      .gis-blue
+        font-size: 11px !important
+        font-weight: normal
+        color: #0066cc !important
+        background: none !important
+    .leftColCenter
+      margin-left: 0
+      float: none
+      text-align: center
+    .rightCol
+      margin-right: 5px
+      padding-top: 2px
+      float: right
+    img
+      position: relative
+      padding-right: 0
+      top: -2px
+      vertical-align: middle
+    .rightCol a
+      color: #0066aa !important
+      text-decoration: underline
+      margin: 0
+      &:hover
+        text-decoration: none
+  .tourism
+    #tHead
+      color: #7a7a7a
+      background: #fff
+    td
+      padding: 3px 5px 3px 5px
+      white-space: nowrap
+      vertical-align: middle
+    #tCity
+      text-align: left
+      width: 55%
+    #tTempAir, #tTempWater, #tWindSpeed
+      text-align: right
+      width: 15%
+  #gs-moduleTourismBlock
+    cursor: default
+  .tourism
+    .tCityDiv
+      text-align: left
+      height: 18px
+    .tTempAirTD, .tTempWaterTD, .tTempWindSpeedTD
+      text-align: right
+    .tCityDiv
+      font-size: 11px
+      height: 18px
+      line-height: 16px
+      margin-top: 2px
+      display: inline-block
+      *display: inline
+      zoom: 1
+    .tTempAirSpan
+      font-size: 11px
+      display: inline-block
+      *display: inline
+      zoom: 1
+      vertical-align: top
+      margin-top: 2px
+      margin-right: 5px
+      height: 18px
+      line-height: 16px
+    .tTempAirSpanImg
+      font-size: 13px
+      display: inline-block
+      *display: inline
+      zoom: 1
+      height: 18px
+      vertical-align: top
+      margin-top: 1px
+    .tTempWaterSpan
+      display: inline-block
+      *display: inline
+      zoom: 1
+      font-size: 11px
+      line-height: 16px
+      margin-top: 2px
+      height: 18px
+    .tWindSpeedSpan
+      font-size: 13px
+      display: inline-block
+      *display: inline
+      zoom: 1
+      padding-right: 5px
+      height: 18px
+      line-height: 16px
+      margin-top: 2px
+    .tWindSpeedArrow
+      font-size: 13px
+      display: inline-block
+      *display: inline
+      zoom: 1
+      height: 18px
+      line-height: 16px
+      margin-top: 2px
+    .tCityDiv a
+      color: #0066aa !important
+      font-size: 11px
+      color: inherit
+      text-decoration: underline
+      &:hover
+        color: inherit
+        text-decoration: none
+  .graphInf
+    padding-top: 5px
+    padding-bottom: 5px
+    .graphHead, .graphTemp
+      padding-left: 19px
+      padding-right: 19px
+      padding-top: 0
+      padding-bottom: 6px
+      font-weight: normal
+      font-size: 13px
+      line-height: 15px
+  .banner
+    display: block
+    width: 728px
+    height: 90px
+    position: relative
+    background: url(http://www.gismeteo.ru/static/images/informer2/banner-f.jpg) no-repeat
+    font-size: 10px
+    text-decoration: none
+    font-family: 'Arial'
+    em
+      display: block
+      width: 170px
+      height: 40px
+      position: absolute
+      background: url(http://www.gismeteo.ru/static/images/informer2/logoUA.png) no-repeat
+      left: 26px
+      top: 19px
+    span.banInf table
+      width: 200px
+    .Icon
+      margin-top: -4px
+    #gs-moduleCurrentBlock
+      width: 200px
+
+.banner #gs-moduleForecastBlock
+  width: 200px
+
+.gsInformer .banner
+  .cols_1
+    text-align: center
+  i
+    display: block
+    width: 192px
+    height: 55px
+    position: absolute
+    background: url(http://www.gismeteo.ru/static/images/informer2/panel.png) no-repeat
+    right: 10px
+    top: 10px
+    font-size: 1.1em
+    color: #fff
+    text-align: center
+    line-height: 1.8em
+    padding-top: 1.4em
+    b
+      font-size: 1.2em
+      font-style: normal
+  .banInf
+    display: block
+    font-size: 1.1em
+    color: #fff
+    line-height: 1.9em
+    padding-left: 264px
+    padding-top: 6px
+    strong
+      font-weight: normal
+      font-size: 2em
+      line-height: .7em
+    b
+      font-size: 1.2em
+    img
+      position: relative
+      top: .3em
+      margin-left: .2em
+      margin-right: .1em

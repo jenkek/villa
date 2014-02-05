@@ -3,11 +3,13 @@
     <div class='inner'>
       <%= raw @page.content_for(:body) %>
     </div>
+    <%= yield :body_content_left %>
   </section>
 
   <section id='side_body'>
     <div class='inner'>
       <%= raw @page.content_for(:side_body) %>
     </div>
+    <%= render :partial => "common/weather" %>
   </section>
 </section>
