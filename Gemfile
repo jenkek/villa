@@ -26,7 +26,8 @@ group :default do
 end
 
 group :development do
-  gem 'brakeman'
+  gem 'brakeman', :require => false
+  gem 'capistrano-db-tasks', :git => 'git://github.com/sgruhier/capistrano-db-tasks', :ref => '396cbbf', :require => false
   gem 'capistrano-unicorn', '~> 0.1.10', :require => false
   gem 'openteam-capistrano', :require => false
 end
