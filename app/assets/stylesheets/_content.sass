@@ -1,12 +1,40 @@
 #content
   +min-height(200px)
   +clearfix
-  +border-radius(8px)
+  +border-radius
   +box-shadow(#777 0 0 3px)
   background-color: #fff
+  margin-bottom: 20px
 
 #body_content
   margin: 20px
 
-  #body_content_title
-    display: none
+  #body
+    float: left
+    width: 652px
+
+  #side_body
+    float: right
+    width: 253px
+
+    h1, h2, h3, h4, h5
+      color: #1a64a6
+      font-size: 14px
+      font-weight: bold
+      text-transform: uppercase
+      margin-bottom: 10px
+
+    .inner
+      border: 2px solid #c0e9ff
+      +border-radius
+      background-color: #c0e9ff
+      padding: 13px
+      margin-bottom: 15px
+
+      .margin_left
+        margin-left: 38px
+
+    .weather
+      border: 2px solid #c0e9ff
+      +border-radius
+      padding: 13px
