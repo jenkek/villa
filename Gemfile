@@ -13,7 +13,7 @@ group :default do
   gem 'airbrake'
   gem 'rails', '~> 3.2.16'
   gem 'pg'
-  gem 'configliere'
+  gem 'openteam-commons'
 
   # Refinery CMS
   gem 'refinerycms', '~> 2.0.0'

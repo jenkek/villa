@@ -66,6 +66,7 @@ GEM
       capistrano (>= 1.0.0)
     capistrano-unicorn (0.1.10)
       capistrano
+    chronic (0.10.2)
     chunky_png (1.2.9)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -130,6 +131,12 @@ GEM
       capistrano-ext
       capistrano-unicorn
       rvm-capistrano
+    openteam-commons (0.2.3)
+      airbrake
+      configliere
+      rails
+      unicorn
+      whenever
     orm_adapter (0.0.7)
     paper_trail (2.7.2)
       activerecord (~> 3.0)
@@ -260,6 +267,9 @@ GEM
       raindrops (~> 0.7)
     warden (1.1.1)
       rack (>= 1.0)
+    whenever (0.9.0)
+      activesupport (>= 2.3.4)
+      chronic (>= 0.6.3)
     will_paginate (3.0.5)
 
 PLATFORMS
@@ -272,10 +282,10 @@ DEPENDENCIES
   capistrano-unicorn (~> 0.1.10)
   coffee-rails (~> 3.2.1)
   compass-rails
-  configliere
   globalize3 (= 0.3.0)
   jquery-rails
   openteam-capistrano
+  openteam-commons
   pg
   rails (~> 3.2.16)
   refinerycms (~> 2.0.0)

@@ -3,4 +3,4 @@ app:
 
 errors:
   key:        SECRET
-  host:       errors.host
+  url:        http://errors.ru
