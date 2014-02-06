@@ -7,4 +7,5 @@ Airbrake.configure do |config|
   config.api_key = Settings.try(:[], 'errors').try(:[], 'key')
   config.host    = Settings.try(:[], 'errors').try(:[], 'host')
   config.port    = 80
+  config.secure  = config.port == 443
 end if Rails.env.production?
