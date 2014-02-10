@@ -1,5 +1,5 @@
 @page_images = ->
-  images = $('#body .inner p a img')
+  images = $('#body a img')
 
   images.each  ->
     $(this).parent('a').colorbox

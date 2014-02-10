@@ -1,4 +1,4 @@
 $ ->
-  page_images() if $('#body .inner a img').length
+  page_images() if $('#body a img').length
 
   true

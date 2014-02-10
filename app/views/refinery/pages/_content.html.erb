@@ -2,9 +2,9 @@
   <section id='body'>
     <% if @page.images.any? %>
       <ul id='gallery'>
-        <% @page.images.each do |image| %>
-          <li>
-            <%= link_to image_tag(image.thumbnail(geometry: "86x650#c").url), image.thumbnail(geometry: "900x600").url %>
+        <% @page.images.each_with_index do |image, index| %>
+          <li class='<%= cycle('item_1', 'item_2', 'item_3', 'item_4') %>'>
+            <%= link_to(image_tag(image.thumbnail('150x112#c').url, :size => '150x112'), image.thumbnail('900x675#c').url) %>
           </li>
         <% end %>
       </ul>
