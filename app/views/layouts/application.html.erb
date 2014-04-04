@@ -17,5 +17,6 @@
       <%= yield %>
     </section>
   </div>
+  <%= render :partial => 'common/metrika' if Rails.env.production? %>
 </body>
 </html>
